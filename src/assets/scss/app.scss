@@ -1,0 +1,331 @@
+// Помощники
+//@import 'mixins/mixins';//миксины scss
+//@import 'main/stylesheet';// шрифты
+//@import 'main/parameters';// переменные
+
+//Общее
+@import 'main/reset'; // сброс стилей для кроссбраузерности
+//@import 'main/common'; // общие стили
+//@import 'main/grid'; // базовая 12ти колоночная сетка для сайта(сделана на основе bootstrap), классы .container/.row/.col-md-6 и т.д.
+
+//Компоненты(все файлы в папке components) -> добавляются автоматически в стили, импортить сюда их не нужно
+
+// дальше можно писать все стили сайта в этот файл, или писать их в компонентах
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+body{
+    background-color: #f4f4f4;
+}
+.header{
+    height: 142px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 2%;
+}
+.first-screen{
+    width: 100%;
+    margin: 0 auto;
+    height: 840px;
+}
+.first-screen__content{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    height: 840px;
+}
+.first-screen__section{
+    width: 50%;
+    height: 100%;
+
+}
+.first-screen__h1{
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 60px;
+line-height: 70px;
+
+letter-spacing: -1px;
+
+color: #151515;
+padding: 10%;
+
+}
+.first-screen__h2{
+
+
+
+padding-left: 10%;
+padding-right: 20%;
+font-family: Fira Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+
+color: #222222;
+
+opacity: 0.7;
+
+}
+.first-screen__placeholder{
+    width: 50%;
+
+}
+.btn{
+width: 189px;
+height: 50px;
+background: #4737FF;
+text-align: center;
+margin-top: 13%;
+margin-left: 10%;
+
+}
+.btn-span{
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 50px;
+
+letter-spacing: 4px;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.fcghk{
+  text-decoration: none;  
+}
+.first-screen__loader{
+    margin-top: 25%;
+    margin-left: 10%;
+}
+.first-screen__loader2{
+
+
+position: absolute;
+
+left: 570px;
+top: 485px;
+
+
+
+
+
+}
+.second-screen{
+    width: 100%;
+    margin: 0 auto;
+    height: 840px;
+}
+.second-screen__content{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    height: 840px;
+}
+.second-screen__section{
+    width: 50%;
+    height: 100%;
+
+}
+.second-screen__section2{
+    width: 43%;
+    height: 100%;
+
+}
+.photo2{
+    padding-top: 28%;
+}
+.h1-second{
+
+
+/* Big Title */
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+/* or 125% */
+letter-spacing: -1px;
+
+/* Black */
+color: #222222;
+
+padding-top: 31%;
+}
+.h2-second{
+
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+
+color: #222222;
+
+opacity: 0.7;
+padding-top: 2%;
+}
+.framework{
+    display: flex;
+    width: 60%;
+    margin-top: 18%;
+}
+.framework-photo{
+    width: 30%;
+
+}
+.framework-span{
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* or 145% */
+
+/* Black */
+color: #222222;
+
+
+}
+.framework-span2{
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+/* Black */
+color: #222222;
+
+opacity: 0.7;
+
+}
+.third-screen{
+    margin: 0 auto;
+    width: 100%;
+    height: 958px;
+    margin-top: 100px;
+}
+.third-screen__content{
+    overflow: hidden;
+    height: 958px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.third-screen_spans{
+    height: 35%;
+    width: 100%;
+    display: flex;
+}
+.third-screen_h1{
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+/* or 125% */
+letter-spacing: -1px;
+
+/* Black */
+color: #222222;
+
+
+
+padding-top: 40px;
+padding-right: 70px;
+}
+.third-screen_span{
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+letter-spacing: 4px;
+text-transform: uppercase;
+
+/* Black */
+color: #222222;
+
+opacity: 0.7;
+
+}
+.itslee{
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+
+color: #222222;
+
+opacity: 0.5;
+margin-top: 20px;
+}
+.menu-ul{
+    text-decoration: none;
+}
+.third-screen_ul{
+width: 50%;
+padding-left: 90px;
+padding-top: 53px;
+display: flex;
+height: 263px;
+}
+.itslee2{
+    text-decoration: none;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #222222;
+
+    opacity: 0.5;
+
+    }
+    .third-screen_text{
+        width: 50%;
+        height: 263px;
+    }
+    .menu-nav2{
+        padding-left: 100px;
+    }
+    .third-screen__placeholder-1{
+        margin-top: 2%;
+        
+    }
+    .third-screen__placeholder-2{
+        margin-top: 2%;
+        margin-left: 30px;
+    }
+    .third-screen__placeholder-3{
+        margin-top: 51px;
+    }
+    @media screen and (max-width: 600px){
+        .first-screen__loader2{
+                width: 50%;
+                height: 50%;
+                left: 50%;
+
+            
+            
+            
+            
+            }
+
+    }
